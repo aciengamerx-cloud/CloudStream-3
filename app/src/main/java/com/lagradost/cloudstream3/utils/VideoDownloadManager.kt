@@ -64,28 +64,28 @@ object VideoDownloadManager {
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
 
     @DrawableRes
-    const val imgDone = R.drawable.rddone
+    val imgDone = R.drawable.rddone
 
     @DrawableRes
-    const val imgDownloading = R.drawable.rdload
+    val imgDownloading = R.drawable.rdload
 
     @DrawableRes
-    const val imgPaused = R.drawable.rdpause
+    val imgPaused = R.drawable.rdpause
 
     @DrawableRes
-    const val imgStopped = R.drawable.rderror
+    val imgStopped = R.drawable.rderror
 
     @DrawableRes
-    const val imgError = R.drawable.rderror
+    val imgError = R.drawable.rderror
 
     @DrawableRes
-    const val pressToPauseIcon = R.drawable.ic_baseline_pause_24
+    val pressToPauseIcon = R.drawable.ic_baseline_pause_24
 
     @DrawableRes
-    const val pressToResumeIcon = R.drawable.ic_baseline_play_arrow_24
+    val pressToResumeIcon = R.drawable.ic_baseline_play_arrow_24
 
     @DrawableRes
-    const val pressToStopIcon = R.drawable.exo_icon_stop
+    val pressToStopIcon = R.drawable.ic_baseline_close_24
 
     enum class DownloadType {
         IsPaused,

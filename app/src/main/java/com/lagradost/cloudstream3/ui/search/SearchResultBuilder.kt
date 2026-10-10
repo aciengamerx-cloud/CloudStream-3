@@ -15,7 +15,7 @@ import com.lagradost.cloudstream3.utils.DataStoreHelper
 import com.lagradost.cloudstream3.utils.DataStoreHelper.fixVisual
 import com.lagradost.cloudstream3.utils.SubtitleHelper
 import com.lagradost.cloudstream3.utils.UIHelper.setImage
-import kotlinx.android.synthetic.main.home_result_grid.view.*
+import com.lagradost.cloudstream3.utils.*
 
 object SearchResultBuilder {
     private val showCache: MutableMap<String, Boolean> = mutableMapOf()

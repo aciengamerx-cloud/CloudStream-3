@@ -18,10 +18,7 @@ import com.lagradost.cloudstream3.ui.result.getDisplayPosition
 import com.lagradost.cloudstream3.ui.settings.SettingsFragment.Companion.isTrueTvSettings
 import com.lagradost.cloudstream3.utils.AppUtils.html
 import com.lagradost.cloudstream3.utils.UIHelper.setImage
-import kotlinx.android.synthetic.main.player_episodes_large.view.episode_holder_large
-import kotlinx.android.synthetic.main.player_episodes_large.view.episode_progress
-import kotlinx.android.synthetic.main.player_episodes_small.view.episode_holder
-import kotlinx.android.synthetic.main.result_episode_large.view.*
+import com.lagradost.cloudstream3.utils.*
 
 
 data class PlayerEpisodeClickEvent(val action: Int, val data: Any)
@@ -127,7 +124,7 @@ class PlayerEpisodeAdapter(
                 if (parentView.context.isTrueTvSettings()) {
                     parentView.isFocusable = true
                     parentView.isFocusableInTouchMode = true
-                    parentView.touchscreenBlocksFocus = false
+                    (parentView as? ViewGroup)?.touchscreenBlocksFocus = false
                 }
             }
         }

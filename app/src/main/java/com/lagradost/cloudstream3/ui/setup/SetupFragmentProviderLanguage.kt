@@ -15,7 +15,7 @@ import com.lagradost.cloudstream3.APIHolder.getApiProviderLangSettings
 import com.lagradost.cloudstream3.R
 import com.lagradost.cloudstream3.utils.SubtitleHelper
 import com.lagradost.cloudstream3.utils.UIHelper.fixPaddingStatusbar
-import kotlinx.android.synthetic.main.fragment_setup_media.*
+import com.lagradost.cloudstream3.utils.*
 
 class SetupFragmentProviderLanguage : Fragment() {
     override fun onCreateView(

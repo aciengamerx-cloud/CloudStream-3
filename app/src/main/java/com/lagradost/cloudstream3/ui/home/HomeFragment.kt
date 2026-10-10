@@ -69,34 +69,7 @@ import com.lagradost.cloudstream3.utils.UIHelper.popupMenuNoIconsAndNoStringRes
 import com.lagradost.cloudstream3.utils.UIHelper.setImage
 import com.lagradost.cloudstream3.utils.UIHelper.setImageBlur
 import com.lagradost.cloudstream3.widget.CenterZoomLayoutManager
-import kotlinx.android.synthetic.main.fragment_home.*
-import kotlinx.android.synthetic.main.fragment_home.home_api_fab
-import kotlinx.android.synthetic.main.fragment_home.home_bookmarked_child_recyclerview
-import kotlinx.android.synthetic.main.fragment_home.home_bookmarked_holder
-import kotlinx.android.synthetic.main.fragment_home.home_change_api_loading
-import kotlinx.android.synthetic.main.fragment_home.home_loaded
-import kotlinx.android.synthetic.main.fragment_home.home_loading
-import kotlinx.android.synthetic.main.fragment_home.home_loading_error
-import kotlinx.android.synthetic.main.fragment_home.home_loading_shimmer
-import kotlinx.android.synthetic.main.fragment_home.home_loading_statusbar
-import kotlinx.android.synthetic.main.fragment_home.home_main_poster_recyclerview
-import kotlinx.android.synthetic.main.fragment_home.home_master_recycler
-import kotlinx.android.synthetic.main.fragment_home.home_plan_to_watch_btt
-import kotlinx.android.synthetic.main.fragment_home.home_provider_meta_info
-import kotlinx.android.synthetic.main.fragment_home.home_provider_name
-import kotlinx.android.synthetic.main.fragment_home.home_reload_connection_open_in_browser
-import kotlinx.android.synthetic.main.fragment_home.home_reload_connectionerror
-import kotlinx.android.synthetic.main.fragment_home.home_statusbar
-import kotlinx.android.synthetic.main.fragment_home.home_type_completed_btt
-import kotlinx.android.synthetic.main.fragment_home.home_type_dropped_btt
-import kotlinx.android.synthetic.main.fragment_home.home_type_on_hold_btt
-import kotlinx.android.synthetic.main.fragment_home.home_type_watching_btt
-import kotlinx.android.synthetic.main.fragment_home.home_watch_child_recyclerview
-import kotlinx.android.synthetic.main.fragment_home.home_watch_holder
-import kotlinx.android.synthetic.main.fragment_home.home_watch_parent_item_title
-import kotlinx.android.synthetic.main.fragment_home.result_error_text
-import kotlinx.android.synthetic.main.fragment_home_tv.*
-import kotlinx.android.synthetic.main.home_episodes_expanded.*
+import com.lagradost.cloudstream3.utils.*
 import java.util.*
 
 const val HOME_BOOKMARK_VALUE_LIST = "home_bookmarked_last_list"

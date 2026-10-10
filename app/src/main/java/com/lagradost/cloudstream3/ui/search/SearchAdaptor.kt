@@ -12,7 +12,7 @@ import com.lagradost.cloudstream3.SearchResponse
 import com.lagradost.cloudstream3.ui.AutofitRecyclerView
 import com.lagradost.cloudstream3.utils.UIHelper.IsBottomLayout
 import com.lagradost.cloudstream3.utils.UIHelper.toPx
-import kotlinx.android.synthetic.main.search_result_compact.view.*
+import com.lagradost.cloudstream3.utils.*
 import kotlin.math.roundToInt
 
 const val SEARCH_ACTION_LOAD = 0

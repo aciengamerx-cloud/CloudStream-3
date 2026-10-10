@@ -18,9 +18,7 @@ import com.lagradost.cloudstream3.ui.settings.appLanguages
 import com.lagradost.cloudstream3.ui.settings.getCurrentLocale
 import com.lagradost.cloudstream3.utils.SubtitleHelper
 import com.lagradost.cloudstream3.utils.UIHelper.fixPaddingStatusbar
-import kotlinx.android.synthetic.main.fragment_setup_language.*
-import kotlinx.android.synthetic.main.fragment_setup_media.listview1
-import kotlinx.android.synthetic.main.fragment_setup_media.next_btt
+import com.lagradost.cloudstream3.utils.*
 
 const val HAS_DONE_SETUP_KEY = "HAS_DONE_SETUP"
 class SetupFragmentLanguage : Fragment() {

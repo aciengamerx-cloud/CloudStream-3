@@ -21,8 +21,7 @@ import com.lagradost.cloudstream3.ui.home.HomeFragment
 import com.lagradost.cloudstream3.utils.UIHelper.fixPaddingStatusbar
 import com.lagradost.cloudstream3.utils.UIHelper.navigate
 import com.lagradost.cloudstream3.utils.UIHelper.setImage
-import kotlinx.android.synthetic.main.main_settings.*
-import kotlinx.android.synthetic.main.settings_title_top.*
+import com.lagradost.cloudstream3.utils.*
 import java.io.File
 
 class SettingsFragment : Fragment() {

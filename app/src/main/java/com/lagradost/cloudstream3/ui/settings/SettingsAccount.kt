@@ -32,9 +32,7 @@ import com.lagradost.cloudstream3.utils.Coroutines.ioSafe
 import com.lagradost.cloudstream3.utils.UIHelper.dismissSafe
 import com.lagradost.cloudstream3.utils.UIHelper.hideKeyboard
 import com.lagradost.cloudstream3.utils.UIHelper.setImage
-import kotlinx.android.synthetic.main.account_managment.*
-import kotlinx.android.synthetic.main.account_switch.*
-import kotlinx.android.synthetic.main.add_account_input.*
+import com.lagradost.cloudstream3.utils.*
 
 class SettingsAccount : PreferenceFragmentCompat() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

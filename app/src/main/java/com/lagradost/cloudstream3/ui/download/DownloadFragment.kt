@@ -35,8 +35,7 @@ import com.lagradost.cloudstream3.utils.UIHelper.hideKeyboard
 import com.lagradost.cloudstream3.utils.UIHelper.navigate
 import com.lagradost.cloudstream3.utils.VideoDownloadHelper
 import com.lagradost.cloudstream3.utils.VideoDownloadManager
-import kotlinx.android.synthetic.main.fragment_downloads.*
-import kotlinx.android.synthetic.main.stream_input.*
+import com.lagradost.cloudstream3.utils.*
 
 
 const val DOWNLOAD_NAVIGATE_TO = "downloadpage"

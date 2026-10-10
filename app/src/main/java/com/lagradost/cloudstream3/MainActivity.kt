@@ -79,8 +79,7 @@ import com.lagradost.cloudstream3.utils.UIHelper.requestRW
 import com.lagradost.cloudstream3.utils.USER_PROVIDER_API
 import com.lagradost.nicehttp.Requests
 import com.lagradost.nicehttp.ResponseParser
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_result_swipe.*
+import com.lagradost.cloudstream3.utils.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext

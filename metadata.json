@@ -1,0 +1,8 @@
+{
+  "name": "CloudStream",
+  "description": "Cloudstream media streaming application for Android",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

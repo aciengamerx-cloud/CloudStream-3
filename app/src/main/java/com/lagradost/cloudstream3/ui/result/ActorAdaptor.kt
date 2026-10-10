@@ -12,7 +12,7 @@ import com.lagradost.cloudstream3.ActorData
 import com.lagradost.cloudstream3.ActorRole
 import com.lagradost.cloudstream3.R
 import com.lagradost.cloudstream3.utils.UIHelper.setImage
-import kotlinx.android.synthetic.main.cast_item.view.*
+import com.lagradost.cloudstream3.utils.*
 
 class ActorAdaptor() : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     data class ActorMetaData(

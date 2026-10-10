@@ -13,7 +13,7 @@ import com.lagradost.cloudstream3.utils.AppUtils.getNameFull
 import com.lagradost.cloudstream3.utils.DataStoreHelper.fixVisual
 import com.lagradost.cloudstream3.utils.DataStoreHelper.getViewPos
 import com.lagradost.cloudstream3.utils.VideoDownloadHelper
-import kotlinx.android.synthetic.main.download_child_episode.view.*
+import com.lagradost.cloudstream3.utils.*
 import java.util.*
 
 const val DOWNLOAD_ACTION_PLAY_FILE = 0

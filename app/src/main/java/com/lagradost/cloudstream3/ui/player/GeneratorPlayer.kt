@@ -47,12 +47,7 @@ import com.lagradost.cloudstream3.utils.UIHelper.colorFromAttribute
 import com.lagradost.cloudstream3.utils.UIHelper.dismissSafe
 import com.lagradost.cloudstream3.utils.UIHelper.hideSystemUI
 import com.lagradost.cloudstream3.utils.UIHelper.popCurrentPage
-import kotlinx.android.synthetic.main.dialog_online_subtitles.*
-import kotlinx.android.synthetic.main.dialog_online_subtitles.apply_btt
-import kotlinx.android.synthetic.main.dialog_online_subtitles.cancel_btt
-import kotlinx.android.synthetic.main.fragment_player.*
-import kotlinx.android.synthetic.main.player_custom_layout.*
-import kotlinx.android.synthetic.main.player_select_source_and_subs.*
+import com.lagradost.cloudstream3.utils.*
 import kotlinx.coroutines.Job
 
 class GeneratorPlayer : FullScreenPlayer() {
@@ -310,7 +305,7 @@ class GeneratorPlayer : FullScreenPlayer() {
 
         val currentTempMeta = getMetaData()
         // bruh idk why it is not correct
-        val color = ColorStateList.valueOf(context.colorFromAttribute(R.attr.colorAccent))
+        val color = ColorStateList.valueOf(context?.colorFromAttribute(androidx.appcompat.R.attr.colorAccent) ?: android.graphics.Color.WHITE)
         dialog.search_loading_bar.progressTintList = color
         dialog.search_loading_bar.indeterminateTintList = color
 

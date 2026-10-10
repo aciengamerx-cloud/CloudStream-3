@@ -20,7 +20,7 @@ import com.lagradost.cloudstream3.utils.InAppUpdater.Companion.runAutoUpdate
 import com.lagradost.cloudstream3.utils.UIHelper.dismissSafe
 import com.lagradost.cloudstream3.utils.UIHelper.hideKeyboard
 import com.lagradost.cloudstream3.utils.VideoDownloadManager
-import kotlinx.android.synthetic.main.logcat.*
+import com.lagradost.cloudstream3.utils.*
 import okhttp3.internal.closeQuietly
 import java.io.BufferedReader
 import java.io.InputStreamReader

@@ -41,8 +41,7 @@ import com.lagradost.cloudstream3.utils.AppUtils.requestLocalAudioFocus
 import com.lagradost.cloudstream3.utils.UIHelper
 import com.lagradost.cloudstream3.utils.UIHelper.hideSystemUI
 import com.lagradost.cloudstream3.utils.UIHelper.popCurrentPage
-import kotlinx.android.synthetic.main.fragment_player.*
-import kotlinx.android.synthetic.main.player_custom_layout.*
+import com.lagradost.cloudstream3.utils.*
 
 enum class PlayerResize(@StringRes val nameRes: Int) {
     Fit(R.string.resize_fit),
@@ -372,7 +371,7 @@ abstract class AbstractPlayerFragment(
         )
 
         if (player is CS3IPlayer) {
-            subView = player_view?.findViewById(R.id.exo_subtitles)
+            subView = player_view?.findViewById(com.google.android.exoplayer2.ui.R.id.exo_subtitles)
             subStyle = SubtitlesFragment.getCurrentSavedStyle()
             player.initSubtitles(subView, subtitle_holder, subStyle)
 

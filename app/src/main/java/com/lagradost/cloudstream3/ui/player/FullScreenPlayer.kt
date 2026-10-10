@@ -50,29 +50,7 @@ import com.lagradost.cloudstream3.utils.UIHelper.popCurrentPage
 import com.lagradost.cloudstream3.utils.UIHelper.showSystemUI
 import com.lagradost.cloudstream3.utils.UIHelper.toPx
 import com.lagradost.cloudstream3.utils.Vector2
-import kotlinx.android.synthetic.main.player_custom_layout.*
-import kotlinx.android.synthetic.main.player_custom_layout.bottom_player_bar
-import kotlinx.android.synthetic.main.player_custom_layout.exo_ffwd
-import kotlinx.android.synthetic.main.player_custom_layout.exo_ffwd_text
-import kotlinx.android.synthetic.main.player_custom_layout.exo_progress
-import kotlinx.android.synthetic.main.player_custom_layout.exo_rew
-import kotlinx.android.synthetic.main.player_custom_layout.exo_rew_text
-import kotlinx.android.synthetic.main.player_custom_layout.player_center_menu
-import kotlinx.android.synthetic.main.player_custom_layout.player_ffwd_holder
-import kotlinx.android.synthetic.main.player_custom_layout.player_holder
-import kotlinx.android.synthetic.main.player_custom_layout.player_pause_play
-import kotlinx.android.synthetic.main.player_custom_layout.player_pause_play_holder
-import kotlinx.android.synthetic.main.player_custom_layout.player_progressbar_left
-import kotlinx.android.synthetic.main.player_custom_layout.player_progressbar_left_holder
-import kotlinx.android.synthetic.main.player_custom_layout.player_progressbar_left_icon
-import kotlinx.android.synthetic.main.player_custom_layout.player_progressbar_right
-import kotlinx.android.synthetic.main.player_custom_layout.player_progressbar_right_holder
-import kotlinx.android.synthetic.main.player_custom_layout.player_progressbar_right_icon
-import kotlinx.android.synthetic.main.player_custom_layout.player_rew_holder
-import kotlinx.android.synthetic.main.player_custom_layout.player_time_text
-import kotlinx.android.synthetic.main.player_custom_layout.player_video_bar
-import kotlinx.android.synthetic.main.player_custom_layout.shadow_overlay
-import kotlinx.android.synthetic.main.trailer_custom_layout.*
+import com.lagradost.cloudstream3.utils.*
 import kotlin.math.*
 
 const val MINIMUM_SEEK_TIME = 7000L         // when swipe seeking

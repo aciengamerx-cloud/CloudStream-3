@@ -13,7 +13,7 @@ import com.lagradost.cloudstream3.R
 import com.lagradost.cloudstream3.utils.DataStore.removeKey
 import com.lagradost.cloudstream3.utils.HOMEPAGE_API
 import com.lagradost.cloudstream3.utils.UIHelper.fixPaddingStatusbar
-import kotlinx.android.synthetic.main.fragment_setup_media.*
+import com.lagradost.cloudstream3.utils.*
 
 
 class SetupFragmentMedia : Fragment() {

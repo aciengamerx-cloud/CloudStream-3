@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.fasterxml.jackson.annotation.JsonProperty
 import com.lagradost.cloudstream3.R
 import com.lagradost.cloudstream3.TvType
-import kotlinx.android.synthetic.main.search_history_item.view.*
+import com.lagradost.cloudstream3.utils.*
 
 data class SearchHistoryItem(
     @JsonProperty("searchedAt") val searchedAt: Long,

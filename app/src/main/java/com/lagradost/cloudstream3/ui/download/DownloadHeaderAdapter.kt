@@ -13,7 +13,7 @@ import com.lagradost.cloudstream3.R
 import com.lagradost.cloudstream3.mvvm.logError
 import com.lagradost.cloudstream3.utils.UIHelper.setImage
 import com.lagradost.cloudstream3.utils.VideoDownloadHelper
-import kotlinx.android.synthetic.main.download_header_episode.view.*
+import com.lagradost.cloudstream3.utils.*
 import java.util.*
 
 data class VisualDownloadHeaderCached(

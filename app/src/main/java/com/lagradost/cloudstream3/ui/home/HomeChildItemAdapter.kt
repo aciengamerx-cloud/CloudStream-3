@@ -11,8 +11,7 @@ import com.lagradost.cloudstream3.ui.search.SearchClickCallback
 import com.lagradost.cloudstream3.ui.search.SearchResultBuilder
 import com.lagradost.cloudstream3.utils.UIHelper.IsBottomLayout
 import com.lagradost.cloudstream3.utils.UIHelper.toPx
-import kotlinx.android.synthetic.main.home_result_grid.view.background_card
-import kotlinx.android.synthetic.main.home_result_grid_expanded.view.*
+import com.lagradost.cloudstream3.utils.*
 
 class HomeChildItemAdapter(
     val cardList: MutableList<SearchResponse>,

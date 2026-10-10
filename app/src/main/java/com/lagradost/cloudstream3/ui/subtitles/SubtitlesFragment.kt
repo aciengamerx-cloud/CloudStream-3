@@ -36,7 +36,7 @@ import com.lagradost.cloudstream3.utils.UIHelper.fixPaddingStatusbar
 import com.lagradost.cloudstream3.utils.UIHelper.hideSystemUI
 import com.lagradost.cloudstream3.utils.UIHelper.navigate
 import com.lagradost.cloudstream3.utils.UIHelper.popCurrentPage
-import kotlinx.android.synthetic.main.subtitle_settings.*
+import com.lagradost.cloudstream3.utils.*
 import java.io.File
 
 const val SUBTITLE_KEY = "subtitle_settings"
@@ -47,7 +47,6 @@ data class SaveCaptionStyle(
     @JsonProperty("foregroundColor") var foregroundColor: Int,
     @JsonProperty("backgroundColor") var backgroundColor: Int,
     @JsonProperty("windowColor") var windowColor: Int,
-    @CaptionStyleCompat.EdgeType
     @JsonProperty("edgeType") var edgeType: Int,
     @JsonProperty("edgeColor") var edgeColor: Int,
     @FontRes

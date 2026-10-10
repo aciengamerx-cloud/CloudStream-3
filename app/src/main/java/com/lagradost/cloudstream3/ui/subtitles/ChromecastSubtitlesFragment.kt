@@ -31,7 +31,7 @@ import com.lagradost.cloudstream3.utils.UIHelper.fixPaddingStatusbar
 import com.lagradost.cloudstream3.utils.UIHelper.hideSystemUI
 import com.lagradost.cloudstream3.utils.UIHelper.navigate
 import com.lagradost.cloudstream3.utils.UIHelper.popCurrentPage
-import kotlinx.android.synthetic.main.subtitle_settings.*
+import com.lagradost.cloudstream3.utils.*
 
 const val CHROME_SUBTITLE_KEY = "chome_subtitle_settings"
 

@@ -87,12 +87,7 @@ import com.lagradost.cloudstream3.utils.UIHelper.requestRW
 import com.lagradost.cloudstream3.utils.UIHelper.setImage
 import com.lagradost.cloudstream3.utils.VideoDownloadManager.getFileName
 import com.lagradost.cloudstream3.utils.VideoDownloadManager.sanitizeFilename
-import kotlinx.android.synthetic.main.fragment_result.*
-import kotlinx.android.synthetic.main.fragment_result_swipe.*
-import kotlinx.android.synthetic.main.fragment_trailer.*
-import kotlinx.android.synthetic.main.result_recommendations.*
-import kotlinx.android.synthetic.main.result_sync.*
-import kotlinx.android.synthetic.main.trailer_custom_layout.*
+import com.lagradost.cloudstream3.utils.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.runBlocking

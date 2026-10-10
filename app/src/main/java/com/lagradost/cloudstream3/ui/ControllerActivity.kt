@@ -150,17 +150,17 @@ class SelectSourceController(val view: ImageView, val activity: ControllerActivi
                             } else {
                                 ChromecastSubtitlesFragment.getCurrentSavedStyle().apply {
                                     val font = TextTrackStyle()
-                                    font.fontFamily = fontFamily ?: "Google Sans"
+                                    font.setFontFamily(fontFamily ?: "Google Sans")
                                     fontGenericFamily?.let {
-                                        font.fontGenericFamily = it
+                                        font.setFontGenericFamily(it)
                                     }
-                                    font.windowColor = windowColor
-                                    font.backgroundColor = backgroundColor
+                                    font.setWindowColor(windowColor)
+                                    font.setBackgroundColor(backgroundColor)
 
-                                    font.edgeColor = edgeColor
-                                    font.edgeType = edgeType
-                                    font.foregroundColor = foregroundColor
-                                    font.fontScale = fontScale
+                                    font.setEdgeColor(edgeColor)
+                                    font.setEdgeType(edgeType)
+                                    font.setForegroundColor(foregroundColor)
+                                    font.setFontScale(fontScale)
 
                                     remoteMediaClient?.setTextTrackStyle(font)
                                 }
@@ -358,10 +358,8 @@ class SelectSourceController(val view: ImageView, val activity: ControllerActivi
         }
     }
 
-    override fun onSessionConnected(castSession: CastSession?) {
-        castSession?.let {
-            super.onSessionConnected(it)
-        }
+    override fun onSessionConnected(castSession: CastSession) {
+        super.onSessionConnected(castSession)
         remoteMediaClient?.queueSetRepeatMode(REPEAT_MODE_REPEAT_OFF, JSONObject())
     }
 }

@@ -12,10 +12,7 @@ import com.discord.panels.PanelsChildGestureRegionObserver
 import com.lagradost.cloudstream3.R
 import com.lagradost.cloudstream3.ui.player.SubtitleData
 import com.lagradost.cloudstream3.utils.IOnBackPressed
-import kotlinx.android.synthetic.main.fragment_result.*
-import kotlinx.android.synthetic.main.fragment_result_swipe.*
-import kotlinx.android.synthetic.main.fragment_trailer.*
-import kotlinx.android.synthetic.main.trailer_custom_layout.*
+import com.lagradost.cloudstream3.utils.*
 
 open class ResultTrailerPlayer : com.lagradost.cloudstream3.ui.player.FullScreenPlayer(),
     PanelsChildGestureRegionObserver.GestureRegionsListener, IOnBackPressed {

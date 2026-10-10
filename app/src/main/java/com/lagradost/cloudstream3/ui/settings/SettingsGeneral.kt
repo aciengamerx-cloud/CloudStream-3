@@ -33,8 +33,7 @@ import com.lagradost.cloudstream3.utils.UIHelper.hideKeyboard
 import com.lagradost.cloudstream3.utils.USER_PROVIDER_API
 import com.lagradost.cloudstream3.utils.VideoDownloadManager
 import com.lagradost.cloudstream3.utils.VideoDownloadManager.getBasePath
-import kotlinx.android.synthetic.main.add_remove_sites.*
-import kotlinx.android.synthetic.main.add_site_input.*
+import com.lagradost.cloudstream3.utils.*
 import java.io.File
 
 class SettingsGeneral : PreferenceFragmentCompat() {

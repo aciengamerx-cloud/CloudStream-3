@@ -11,11 +11,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.preference.PreferenceManager
 import com.lagradost.cloudstream3.R
 import com.lagradost.cloudstream3.utils.UIHelper.fixPaddingStatusbar
-import kotlinx.android.synthetic.main.fragment_setup_layout.*
-import kotlinx.android.synthetic.main.fragment_setup_media.listview1
-import kotlinx.android.synthetic.main.fragment_setup_media.next_btt
-import kotlinx.android.synthetic.main.fragment_setup_media.prev_btt
-import kotlinx.android.synthetic.main.fragment_setup_media.setup_root
+import com.lagradost.cloudstream3.utils.*
 import org.acra.ACRA
 
 

@@ -41,7 +41,7 @@ import com.lagradost.cloudstream3.utils.UIHelper.dismissSafe
 import com.lagradost.cloudstream3.utils.UIHelper.fixPaddingStatusbar
 import com.lagradost.cloudstream3.utils.UIHelper.getSpanCount
 import com.lagradost.cloudstream3.utils.UIHelper.hideKeyboard
-import kotlinx.android.synthetic.main.fragment_search.*
+import com.lagradost.cloudstream3.utils.*
 import java.util.concurrent.locks.ReentrantLock
 
 const val SEARCH_PREF_TAGS = "search_pref_tags"

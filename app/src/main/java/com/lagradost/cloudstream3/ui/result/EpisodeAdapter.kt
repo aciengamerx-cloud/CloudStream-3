@@ -22,13 +22,7 @@ import com.lagradost.cloudstream3.utils.AppUtils.html
 import com.lagradost.cloudstream3.utils.UIHelper.setImage
 import com.lagradost.cloudstream3.utils.VideoDownloadHelper
 import com.lagradost.cloudstream3.utils.VideoDownloadManager
-import kotlinx.android.synthetic.main.result_episode.view.*
-import kotlinx.android.synthetic.main.result_episode.view.episode_text
-import kotlinx.android.synthetic.main.result_episode_large.view.*
-import kotlinx.android.synthetic.main.result_episode_large.view.episode_filler
-import kotlinx.android.synthetic.main.result_episode_large.view.episode_progress
-import kotlinx.android.synthetic.main.result_episode_large.view.result_episode_download
-import kotlinx.android.synthetic.main.result_episode_large.view.result_episode_progress_downloaded
+import com.lagradost.cloudstream3.utils.*
 import java.util.*
 
 const val ACTION_PLAY_EPISODE_IN_PLAYER = 1
@@ -212,7 +206,7 @@ class EpisodeAdapter(
             if (parentView.context.isTrueTvSettings()) {
                 parentView.isFocusable = true
                 parentView.isFocusableInTouchMode = true
-                parentView.touchscreenBlocksFocus = false
+                (parentView as? ViewGroup)?.touchscreenBlocksFocus = false
             }
 
             parentView.setOnLongClickListener {

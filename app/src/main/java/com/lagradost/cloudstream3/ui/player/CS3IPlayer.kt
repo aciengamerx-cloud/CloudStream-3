@@ -673,7 +673,7 @@ class CS3IPlayer : IPlayer {
                 /**
                  * Records the current used subtitle/track. Needed as exoplayer seems to have loose track language selection.
                  * */
-                override fun onTracksInfoChanged(tracksInfo: TracksInfo) {
+                override fun onTracksChanged(tracks: com.google.android.exoplayer2.Tracks) {
                     fun Format.isSubtitle(): Boolean {
                         return this.sampleMimeType?.contains("video/") == false &&
                                 this.sampleMimeType?.contains("audio/") == false
@@ -681,40 +681,35 @@ class CS3IPlayer : IPlayer {
 
                     normalSafeApiCall {
                         exoPlayerSelectedTracks =
-                            tracksInfo.trackGroupInfos.mapNotNull {
-                                val format = it.trackGroup.getFormat(0)
+                            tracks.groups.mapNotNull { group ->
+                                val format = group.mediaTrackGroup.getFormat(0)
                                 if (format.isSubtitle())
-                                    format.language?.let { lang -> lang to it.isSelected }
+                                    format.language?.let { lang -> lang to group.isSelected }
                                 else null
                             }
 
-                        val exoPlayerReportedTracks = tracksInfo.trackGroupInfos.mapNotNull {
-                            // Filter out unsupported tracks
-                            if (it.isSupported)
-                                it.trackGroup.getFormat(0)
+                        val exoPlayerReportedTracks = tracks.groups.mapNotNull { group ->
+                            if (group.isSupported)
+                                group.mediaTrackGroup.getFormat(0)
                             else
                                 null
-                        }.mapNotNull {
-                            // Filter out non subs, already used subs and subs without languages
-                            if (!it.isSubtitle() ||
-                                // Anything starting with - is not embedded
-                                it.language?.startsWith("-") == true ||
-                                it.language == null
+                        }.mapNotNull { format ->
+                            if (!format.isSubtitle() ||
+                                format.language?.startsWith("-") == true ||
+                                format.language == null
                             ) return@mapNotNull null
                             return@mapNotNull SubtitleData(
-                                // Nicer looking displayed names
-                                fromTwoLettersToLanguage(it.language!!) ?: it.language!!,
-                                // See setPreferredTextLanguage
-                                it.language!!,
+                                fromTwoLettersToLanguage(format.language!!) ?: format.language!!,
+                                format.language!!,
                                 SubtitleOrigin.EMBEDDED_IN_VIDEO,
-                                it.sampleMimeType ?: MimeTypes.APPLICATION_SUBRIP
+                                format.sampleMimeType ?: MimeTypes.APPLICATION_SUBRIP
                             )
                         }
 
                         embeddedSubtitlesFetched?.invoke(exoPlayerReportedTracks)
                         subtitlesUpdates?.invoke()
                     }
-                    super.onTracksInfoChanged(tracksInfo)
+                    super.onTracksChanged(tracks)
                 }
 
                 override fun onPlayerStateChanged(playWhenReady: Boolean, playbackState: Int) {

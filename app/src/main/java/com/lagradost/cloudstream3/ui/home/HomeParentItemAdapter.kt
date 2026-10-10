@@ -14,7 +14,7 @@ import com.lagradost.cloudstream3.ui.search.SearchClickCallback
 import com.lagradost.cloudstream3.ui.search.SearchFragment.Companion.filterSearchResponse
 import com.lagradost.cloudstream3.ui.settings.SettingsFragment.Companion.isTvSettings
 import com.lagradost.cloudstream3.utils.AppUtils.isRecyclerScrollable
-import kotlinx.android.synthetic.main.homepage_parent.view.*
+import com.lagradost.cloudstream3.utils.*
 
 
 class ParentItemAdapter(
